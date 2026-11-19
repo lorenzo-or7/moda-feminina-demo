@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="Maison Elle: boutique feminina com curadoria editorial. Protótipo demonstrativo desenvolvido por Or7.dev." />
+    <meta name="theme-color" content="#F7F5F0" />
+    <title>Maison Elle | Boutique feminina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+    <link
+      rel="preload"
+      as="image"
+      imagesrcset="https://images.unsplash.com/photo-1571513800374-df1bbe650e56?auto=format&fit=crop&w=480&h=624&q=72 480w, https://images.unsplash.com/photo-1571513800374-df1bbe650e56?auto=format&fit=crop&w=720&h=936&q=72 720w, https://images.unsplash.com/photo-1571513800374-df1bbe650e56?auto=format&fit=crop&w=960&h=1248&q=72 960w, https://images.unsplash.com/photo-1571513800374-df1bbe650e56?auto=format&fit=crop&w=1280&h=1664&q=72 1280w, https://images.unsplash.com/photo-1571513800374-df1bbe650e56?auto=format&fit=crop&w=1600&h=2080&q=72 1600w"
+      imagesizes="(min-width: 900px) 52vw, 100vw"
+      fetchpriority="high"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      // Aplica o tema salvo antes da pintura para evitar flash.
+      try {
+        var t = localStorage.getItem('me:theme');
+        if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
